@@ -9,6 +9,8 @@ st.title("Renewable power plants in Switzerland")
 
 st.write("Data 'renewable_power_plants_CH.csv' from:", "https://data.open-power-system-data.org/renewable_power_plants/")
 
+clean_energy_ch = pd.read_csv("./data/renewable_power_plants_CH.csv")
+
 # Widgets: checkbox (you can replace st.xx with st.sidebar.xx)
 if st.checkbox("Show Dataframe"):
     st.subheader("This is my dataset:")
@@ -17,7 +19,6 @@ if st.checkbox("Show Dataframe"):
 
 st.header("Part 1")
 
-clean_energy_ch = pd.read_csv("./data/renewable_power_plants_CH.csv")
 
 # Getting the coordinates of the Cantons - file downloaded from here: https://data.opendatasoft.com/explore/dataset/georef-switzerland-kanton%40public/export/?disjunctive.kan_code&disjunctive.kan_name&sort=year&location=8,46.82242,8.22403&basemap=jawg.streets&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6Imdlb3JlZi1zd2l0emVybGFuZC1rYW50b25AcHVibGljIiwib3B0aW9ucyI6eyJkaXNqdW5jdGl2ZS5rYW5fY29kZSI6dHJ1ZSwiZGlzanVuY3RpdmUua2FuX25hbWUiOnRydWUsInNvcnQiOiJ5ZWFyIn19LCJjaGFydHMiOlt7ImFsaWduTW9udGgiOnRydWUsInR5cGUiOiJsaW5lIiwiZnVuYyI6IkNPVU5UIiwic2NpZW50aWZpY0Rpc3BsYXkiOnRydWUsImNvbG9yIjoiIzE0MkU3QiJ9XSwieEF4aXMiOiJ5ZWFyIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoieWVhciIsInNvcnQiOiIifV0sImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9
 
